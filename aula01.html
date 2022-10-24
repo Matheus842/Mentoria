@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+    <link rel="stylesheet" href="./css/aula01.css">
+</head> 
+<body>
+    
+    
+    <form onchange="evento()">
+
+        <input type="text" inputmode="numeric" id="num_um" value="0">
+        <input type="text" inputmode="numeric" id="num_dois" value="0">
+        
+        <hr>
+
+        <div class="opcoes">
+                    
+            <label for="soma" id="somar" class="ativo">Somar</label>
+            <input type="radio" name="operation" id="soma" checked>
+            
+            <label for="sub" id="subs">Subtrair</label>
+            <input type="radio" name="operation" id="sub">
+
+            <label for="limpa" onclick="limpar()" id="limpar">Limpar</label>
+            <input type="radio" name="limpar" id="limpa">
+            
+        </div>
+        
+        <hr>
+        
+        <p id="res">0</p>
+
+        <a href="/">Voltar ao início</a>
+
+    </form>
+
+
+    <script src="./js/aula01.js"></script>
+</body>
+</html>
