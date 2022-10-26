@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border-radius: 5px;
+    outline: none;
+    border: 1.7px solid #000;
+    color: #fdfdfd;
+}
+
+#res {
+    width: 99%;
+    margin: 5px auto;
+    height: 50px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: #777;
+}
+
+#som, #sub {
+    width: 49%;
+    height: 35px;
+    font-size: 1.3;
+    text-align: center;
+    font-weight: bold;
+    background-color: #444;
+}
+
+.main {
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 25px;
+    background-color: #222;
+    padding: 7px;
+    min-height: 65vh;
+    border: 2px solid #000;
+    border-radius: 7px;
+}
+
+.ope {
+    display: flex;
+    justify-content: space-between;
+}
