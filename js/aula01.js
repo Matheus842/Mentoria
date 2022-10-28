@@ -1,5 +1,14 @@
 var tipo = 'Somar'
 
+var checkbox = document.querySelector('#theme')
+checkbox.addEventListener('change', function(){
+    if(this.checked){
+        document.documentElement.setAttribute('data-theme', 'light')
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark')
+    }
+})
+
 function oper(){
     let num_um = document.querySelector('#num_um').value
     let num_dois = document.querySelector('#num_dois').value

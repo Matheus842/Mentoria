@@ -1,12 +1,30 @@
+html[data-theme=dark]{
+    --body-background: #444;
+    --form-background: #222;
+    --color: #fff;
+    --option-color: #111;
+    --res-background: #555;
+    --ativo: green;
+}
+
+html[data-theme=light]{
+    --body-background: #fff;
+    --form-background: #333d10;
+    --color: #000;
+    --option-color: #cbe54e;
+    --res-background: #bfeb5b;
+    --ativo: #293a5f;
+}
+
 body {
-    background-color: #444;
+    background-color: var(--body-background);
     display: flex;
     align-items: center;
 }
 
 form {
     display: flex;
-    background-color: #222;
+    background-color: var(--form-background);
     width: 80vw;
     min-height: 90vh;
     margin: 0 auto;
@@ -35,7 +53,7 @@ input:focus {
 
 label {
     padding: 3px;
-    color: #fff;
+    color: var(--color);
     font-weight: bolder;
     font-size: 1.2rem;
     border: 1.3px solid #000;
@@ -64,7 +82,7 @@ a {
 }
 
 #somar, #subs{
-    background-color: #111;
+    background-color: var(--option-color);
 }
 
 #limpar {
@@ -72,15 +90,23 @@ a {
 }
 
 #res {
-    background-color: #666;
+    background-color: var(--res-background);
     min-width: 15vh;
     min-height: none;
     text-align: center;
-    color: #fff;
+    color: var(--color);
     font-size: 1.7rem;
     padding: 3px;
     border: 1.7px solid #000;
     border-radius: 5px;
+}
+
+#theme {
+    position: fixed;
+    height: 25px;
+    width: 25px;
+    right: 9%;
+    top: 2%;
 }
 
 .opcoes {
@@ -91,5 +117,5 @@ a {
 }
 
 .ativo {
-    background-color: green !important;
+    background-color: var(--ativo) !important;
 }
