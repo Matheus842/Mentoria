@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testes</title>
-    <link rel="stylesheet" href="css/testes.css">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="Funcões.js"></script>
 </head>
 <body>
-    
-    <div class="main">
-        <input type="text" inputmode="numeric" id="res" value="0">
-        <div class="ope">
-            <input type="button" value="- 1" id="sub">
-            <input type="button" value="+ 1" id="som">
-        </div>
+    <h1> Faça seu calculo!</h1> 
+    <div class="Resultado">
+        <p id="Amostra">0</p></div>
+        
+   <div class="botons">
+    <button onclick="insert('1')">1</button><button  onclick="insert('2')">2</button><button  onclick="insert('3')">3</button><button onclick="insert('+')">+</button><br>
+    <button onclick="insert('4')">4</button><button onclick="insert('5')">5</button><button onclick="insert('6')">6</button><button onclick="insert('-')" >-</button><br>
+    <button onclick="insert('7')">7</button><button  onclick="insert('8')">8</button><button onclick="insert('9')">9</button><button onclick="insert('*')">x</button><br>
+    <button onclick="insert(',')">,</button><button onclick="insert('0')">0</button><button onclick="Calcular()">=</button><button onclick="insert('.')">.</button><br>
+    <button onclick="back()">bck</button><button onclick="insert('/')">/</button>
     </div>
-
-    <script src="js/testes.js"></script>
+    <button id="apagar" onclick="clean()"></button>
+   
+   
+   
 </body>
 </html>
